@@ -1,5 +1,9 @@
 import {forwardRef} from 'react';
 
+// ./는 현재 파일이 위치한 디렉토리(폴더)를 가리킵니다. 따라서 ./style.css는 현재 파일과 같은 디렉토리에 있는 style.css 파일을 가져오는 것을 의미
+// ./: 현재 파일이 위치한 디렉토리
+import './style.css'; 
+
 // 여기다가 타입지정
 interface Props{
 
@@ -13,12 +17,16 @@ const InputBox = forwardRef<HTMLInputElement,Props>((props: Props,ref)=>{
     //반환할 html을 작성
     return (
         <div className='input-box'>
+           
             <div className='input-box-title'>{'아이디'}</div>
+           
             <div className='input-box-content'>
-                <input className='input-box-input'/>
-                <div className='input-box-button'>{'중복 확인'}</div>
+                <div className='input-box-body'>
+                    <input className='input-box-input' placeholder='아이디를 입력해주세요'/>
+                    <div className='input-box-button-disable'>{'중복 확인'}</div>
+                </div>
+                <div className='input-box-message-error'>{'사용 가능한 아이디 입니다.'}</div>
             </div>
-            <div className='input-box-message'>{'사용 가능한 아이디 입니다.'}</div>
         </div>
     );
 });
