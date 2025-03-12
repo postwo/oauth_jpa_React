@@ -1,0 +1,69 @@
+.primary-button-lg {
+  border-radius: 6px; /*버튼의 모서리를 둥글게 만든다*/
+  padding: 8px 24px; /*버튼 내부의 텍스트와 테두리 사이의 여백을 설정*/
+
+  box-sizing: border-box; /* 테두리와 패딩을 포함한 전체 크기를 설정*/
+
+  display: inline-flex; /* 버튼을 인라인 플렉스 컨테이너로 설정하여 내부 요소를 정렬*/
+  justify-content: center; /* 버튼 내의 콘텐츠를 가로 방향으로 가운데 정렬*/
+  align-items: center; /* 버튼 내의 콘텐츠를 세로 방향으로 가운데 정렬*/
+
+  background-color: rgba(58,87,232,1); /*버튼의 배경 색상을 설정*/
+
+  color: rgba(255,255,255,1); /*버튼 텍스트의 색상을 설정*/
+
+  font-size: 16px; /*버튼 텍스트의 글꼴 크기를 설정*/
+  font-weight: 400; /*버튼 텍스트의 글꼴 굵기를 설정*/
+  line-height: 175%; /*버튼 텍스트의 줄 높이를 설정*/
+
+  cursor: pointer; /*버튼 위에 마우스를 올렸을 때 커서를 포인터로 변경*/
+}
+
+.disable-button-lg {
+  border-radius: 6px;
+  padding: 8px 24px;
+
+  box-sizing: border-box;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(138,146,166,1);
+
+  color: rgba(255,255,255,1);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 175%;
+
+  cursor: default;
+}
+
+.text-link-lg {
+  box-sizing: border-box;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  color: rgba(113,113,113,1);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 175%;
+
+  cursor: pointer;
+}
+
+.text-link-lg:hover{
+  color: rgba(40,40,40,1);
+}
+
+.primary-button-lg:hover {
+  opacity: 0.95; /* 마우스를 올렸을 때 버튼의 불투명도를 설정 */
+}
+
+.full-width{
+  width: 100%; /* 요소의 너비를 부모 요소의 100%로 설정 */
+}
