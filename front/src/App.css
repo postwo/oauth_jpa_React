@@ -67,3 +67,24 @@
 .full-width{
   width: 100%; /* 요소의 너비를 부모 요소의 100%로 설정 */
 }
+
+
+.kakao-sign-in-button {
+  width: 56px; /* 버튼의 너비를 56픽셀로 설정 */
+  height: 56px; /* 버튼의 높이를 56픽셀로 설정 */
+  background-position: 50% 50%; /* 배경 이미지를 가로, 세로 방향으로 중앙에 위치 */
+  background-size: 100% 100%; /* 배경 이미지의 크기를 버튼 크기에 맞춤 */
+  background-image: url(assets/images/kakao-sign-in.png); /* 카카오 로그인 버튼의 배경 이미지 */
+ 
+  cursor: pointer; /* 버튼 위에 마우스를 올렸을 때 커서를 포인터로 변경 */
+}
+
+.naver-sign-in-button {
+  width: 56px; /* 버튼의 너비를 56픽셀로 설정 */
+  height: 56px; /* 버튼의 높이를 56픽셀로 설정 */
+  background-position: 50% 50%; /* 배경 이미지를 가로, 세로 방향으로 중앙에 위치 */
+  background-size: 100% 100%; /* 배경 이미지의 크기를 버튼 크기에 맞춤 */
+  background-image: url(assets/images/naver-sign-in.png); /* 네이버 로그인 버튼의 배경 이미지 */
+  
+  cursor: pointer; /* 버튼 위에 마우스를 올렸을 때 커서를 포인터로 변경 */
+}
