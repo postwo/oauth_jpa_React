@@ -1,4 +1,4 @@
-enum ResponseCode{
+enum ResponseCode{ // 응답 코드
     SUCCESS = "su",
 
     VALIDATION_FAIL = "VF",
